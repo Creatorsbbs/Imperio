@@ -25,7 +25,10 @@ const rest = new REST({
     try {
 
         await rest.put(
-            Routes.applicationCommands(process.env.CLIENT_ID),
+            Routes.applicationGuildCommands(
+    process.env.CLIENT_ID,
+    process.env.GUILD_ID
+),
             {
                 body: commands
             }
