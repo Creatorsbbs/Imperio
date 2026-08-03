@@ -5,6 +5,13 @@ module.exports = {
 
     async execute(member) {
 
+        // Cargo automático
+const cargo = member.guild.roles.cache.get("ID_DO_CARGO");
+
+if (cargo) {
+    await member.roles.add(cargo);
+}
+        
         // ID do canal de boas-vindas
         const canal = member.guild.channels.cache.get("1533536441445908704");
 
