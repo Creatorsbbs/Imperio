@@ -28,6 +28,9 @@ Respostas falsas poderão resultar em reprovação.
 ➥ 𝑺𝒆𝒖 𝒏𝒐𝒎𝒆:
 ➤
 
+➥ 𝒖𝒔𝒆𝒓 𝑫𝒊𝒔𝒄𝒐𝒓𝒅:
+➤
+
 ➥ 𝑰𝒅𝒂𝒅𝒆:
 ➤
 
