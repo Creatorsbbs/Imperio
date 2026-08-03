@@ -1,7 +1,7 @@
 const { Events } = require("discord.js");
 
-const CANAL_PROTEGIDO = "ID_DO_CANAL";
-const DONO_ID = "SEU_ID";
+const CANAL_PROTEGIDO = "1533642288679354568";
+const DONO_ID = "1142242302056738826";
 
 module.exports = {
     name: Events.MessageCreate,
