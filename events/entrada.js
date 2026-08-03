@@ -6,7 +6,7 @@ module.exports = {
     async execute(member) {
 
         // Cargo automático
-const cargo = member.guild.roles.cache.get("ID_DO_CARGO");
+const cargo = member.guild.roles.cache.get("1533546542458212464");
 
 if (cargo) {
     await member.roles.add(cargo);
