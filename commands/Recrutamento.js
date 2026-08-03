@@ -34,6 +34,9 @@ Respostas falsas poderão resultar em reprovação.
 ➥ 𝑰𝒅𝒂𝒅𝒆:
 ➤
 
+➥ 𝒗𝒆𝒊𝒐 𝒑𝒐𝒓 𝒒𝒖𝒆𝒎?
+➤
+
 ➥ 𝑫𝒆 𝒒𝒖𝒂𝒍 𝒃𝒂𝒊𝒍𝒆 𝒗𝒆𝒎?
 ➤
 
