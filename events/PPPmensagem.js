@@ -1,10 +1,10 @@
 const { Events, EmbedBuilder } = require("discord.js");
 
-const CANAL_PPP = "ID_DO_CANAL";
+const CANAL_PPP = "1533536596048216074";
 
-const EMOJI_PEGO = "<:pego:ID_DO_EMOJI>";
-const EMOJI_PASSO = "<:passo:ID_DO_EMOJI>";
-const EMOJI_PENSO = "<:penso:ID_DO_EMOJI>";
+const EMOJI_PEGO = "<:pego:1533845660644806807>";
+const EMOJI_PASSO = "<:passo:1533846600357646467>";
+const EMOJI_PENSO = "<:penso:1533845860524228710>";
 
 module.exports = {
     name: "pppFotoRecebida",
