@@ -8,7 +8,7 @@ module.exports = {
     async execute(interaction) {
 
         const embed = new EmbedBuilder()
-            .setTitle("🛡️ Recrutamento Imperial")
+            .setTitle("🛡️ copie e responda o formulário e envie.")
             .setDescription(
 `╭─────── ⋆⋅☆⋅⋆ ───────╮
         𓆩 𝑹𝑬𝑪𝑹𝑼𝑻𝑨𝑴𝑬𝑵𝑻𝑶 𓆪
