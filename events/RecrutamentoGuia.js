@@ -22,6 +22,7 @@ Bem-vindo à Tropa Imperial, ${member}!
 • Respeito aos membros
 • Atividade no servidor
 • Lealdade à Tropa Imperial
+• +13 anos
 
 Boa sorte, recruta. 🫡
             `)
