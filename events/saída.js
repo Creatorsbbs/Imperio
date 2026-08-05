@@ -14,7 +14,13 @@ module.exports = {
             .setColor("#ff3b30")
             .setTitle("👋 Um membro saiu...")
             .setDescription(
-                `**${member.user.tag}** saiu da **Tropa Imperial**.\n\n` +
+                `**${member.user.tag}**deixou a Tropa Imperial.
+
+Cada integrante que passa por aqui faz parte da nossa história. Desejamos sucesso na sua jornada e agradecemos pelo tempo em que esteve conosco.
+
+«A Tropa Imperial continua firme, crescendo com honra, respeito e lealdade.»
+
+Até a próxima.**.\n\n` +
                 `Agora somos **${member.guild.memberCount}** membros.`
             )
             .setThumbnail(member.user.displayAvatarURL({ size: 1024 }))
