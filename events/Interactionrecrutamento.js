@@ -68,10 +68,16 @@ module.exports = {
                 await membro.roles.add(CARGO_APROVADO);
 
 
-                await interaction.update({
-    embeds: [
-        interaction.message.embeds[0]
-    ],
+                const embed = EmbedBuilder.from(interaction.message.embeds[0])
+    .addFields({
+        name: "📌 Status",
+        value: `✅ Aprovado\n👤 Responsável: ${interaction.user}`
+    })
+    .setColor("#00FF00");
+
+
+await interaction.update({
+    embeds: [embed],
     components: []
 });
 
@@ -105,10 +111,16 @@ await interaction.followUp({
                 ).catch(() => {});
 
 
-                await interaction.update({
-    embeds: [
-        interaction.message.embeds[0]
-    ],
+                const embed = EmbedBuilder.from(interaction.message.embeds[0])
+    .addFields({
+        name: "📌 Status",
+        value: `❌ Recusado\n👤 Responsável: ${interaction.user}`
+    })
+    .setColor("#FF0000");
+
+
+await interaction.update({
+    embeds: [embed],
     components: []
 });
 
