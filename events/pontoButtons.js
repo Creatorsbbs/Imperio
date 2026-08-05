@@ -146,67 +146,6 @@ ${dados.pontosBatidos}`
 
             );
 
-          const status = dados.emServico
-            ? "🟢 Em Serviço"
-            : "🔴 Fora de Serviço";
-
-        const entrada = dados.entrada
-            ? `<t:${Math.floor(dados.entrada.getTime() / 1000)}:F>`
-            : "Nenhuma";
-
-        const embed = new EmbedBuilder()
-
-            .setColor("#F5C542")
-
-            .setTitle("🕒 Sistema de Bate Ponto")
-
-            .setDescription(
-`## Informações
-
-👤 **Funcionário**
-${interaction.user}
-
-📌 **Status**
-${status}
-
-⏰ **Entrada**
-${entrada}
-
-⌛ **Tempo Total**
-${formatarTempo(dados.tempoTotal)}
-
-📊 **Pontos Batidos**
-${dados.pontosBatidos}`
-            );
-
-        const row = new ActionRowBuilder()
-
-            .addComponents(
-
-                new ButtonBuilder()
-
-                    .setCustomId("ponto")
-
-                    .setLabel(
-                        dados.emServico
-                            ? "Sair de Serviço"
-                            : "Entrar de Serviço"
-                    )
-
-                    .setEmoji(
-                        dados.emServico
-                            ? "🔴"
-                            : "🟢"
-                    )
-
-                    .setStyle(
-                        dados.emServico
-                            ? ButtonStyle.Danger
-                            : ButtonStyle.Success
-                    )
-
-            );
-
         await interaction.update({
             embeds: [embed],
             components: [row]
