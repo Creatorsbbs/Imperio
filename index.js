@@ -10,6 +10,7 @@ const {
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
+const mongoose = require("mongoose");
 
 const app = express();
 
@@ -132,6 +133,14 @@ client.on(Events.InteractionCreate, async interaction => {
 
     }
 
+});
+
+mongoose.connect(process.env.MONGO_URI)
+.then(() => {
+    console.log("✅ MongoDB conectado!");
+})
+.catch((err) => {
+    console.error("❌ Erro ao conectar ao MongoDB:", err);
 });
 
 client.login(process.env.TOKEN);
