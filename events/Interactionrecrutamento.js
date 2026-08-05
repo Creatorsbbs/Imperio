@@ -68,10 +68,17 @@ module.exports = {
                 await membro.roles.add(CARGO_APROVADO);
 
 
-                await interaction.reply({
-                    content: "✅ Membro aprovado!",
-                    ephemeral: true
-                });
+                await interaction.update({
+    embeds: [
+        interaction.message.embeds[0]
+    ],
+    components: []
+});
+
+await interaction.followUp({
+    content: "✅ Membro aprovado!",
+    ephemeral: true
+});
 
             }
 
@@ -98,10 +105,17 @@ module.exports = {
                 ).catch(() => {});
 
 
-                await interaction.reply({
-                    content: "❌ Membro recusado.",
-                    ephemeral: true
-                });
+                await interaction.update({
+    embeds: [
+        interaction.message.embeds[0]
+    ],
+    components: []
+});
+
+await interaction.followUp({
+    content: "❌ Membro recusado.",
+    ephemeral: true
+});
 
             }
 
