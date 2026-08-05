@@ -19,8 +19,16 @@ if (cargo) {
 
         const embed = new EmbedBuilder()
             .setColor("#2F3136")
-            .setTitle("👑 Bem-vindo à Tropa Imperial!")
-            .setDescription(`Seja bem-vindo(a), ${member}!`)
+            .setTitle("salve!")
+            .setDescription(`Você acaba de entrar na Tropa Imperial ${member}, onde respeito, disciplina e lealdade vêm em primeiro lugar.
+⟡ O que fazer agora?
+Leia as regras do servidor.
+Acesse o canal de recrutamento.
+Siga todas as orientações da equipe.
+Aguarde a aprovação para fazer parte da tropa.
+⟡ Lembre-se
+Quem entra na Tropa Imperial representa o nome da organização. Mantenha o respeito com todos e siga as ordens da liderança.
+Seja bem-vindo(a) e boa sorte no seu recrutamento!!`)
             .setThumbnail(member.user.displayAvatarURL({ size: 1024 }))
             .setImage("https://cdn.discordapp.com/attachments/1500914111725436992/1533627754216689816/file_000000004ccc820eaa941884b30d693d.png?ex=6a712da6&is=6a6fdc26&hm=3d7a9d25d9219205b5ebcbf8f1f5d600fc276e67034ac2e79befd1b0d7fa3c98&")
             .setTimestamp();
